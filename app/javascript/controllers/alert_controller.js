@@ -11,21 +11,26 @@ export default class extends Controller {
     cancelButtonText: String
   }
   connect() {
-    console.log("Shalom 🥸")
+    // console.log("Shalom 🥸")
   }
+
   initSweetalert(event) {
-    event.preventDefault();
-    Swal.fire({
-      html: this.htmlValue,
-      title: this.titleValue,
-      showCancelButton: this.showCancelButtonValue,
-      confirmButtonText: this.confirmButtonTextValue,
-      cancelButtonText: this.cancelButtonTextValue,
-      reverseButtons: true
-    }).then((action) => {
-      if (action.isConfirmed) {
-        this.element.submit();
-      }
-    })
+    Swal.fire('Hello!', 'This is a SweetAlert2 alert!', 'success');
   }
+
+
+  // initSweetalert(event) {
+  //   event.preventDefault();
+  //   Swal.fire({
+  //     html: this.htmlValue,
+  //     title: this.titleValue,
+  //     showCancelButton: this.showCancelButtonValue,
+  //     confirmButtonText: this.confirmButtonTextValue,
+  //     cancelButtonText: this.cancelButtonTextValue
+  //   }).then((action) => {
+  //     if (action.isConfirmed) {
+  //       this.element.click();
+  //     }
+  //   })
+  // }
 }
