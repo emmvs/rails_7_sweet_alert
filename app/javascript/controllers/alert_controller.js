@@ -11,16 +11,16 @@ export default class extends Controller {
     cancelButtonText: String
   }
   connect() {
-    // console.log("Shalom 🥸")
+    console.log("Shalom 🥸")
   }
 
-  initSweetalert(event) {
+  initSweetalert() {
     Swal.fire('Hello!', 'This is a SweetAlert2 alert!', 'success');
   }
 
 
   // initSweetalert(event) {
-  //   event.preventDefault();
+    // event.preventDefault();
   //   Swal.fire({
   //     html: this.htmlValue,
   //     title: this.titleValue,
