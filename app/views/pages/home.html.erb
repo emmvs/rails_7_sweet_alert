@@ -1,14 +1,19 @@
+<%# You do not need a data-controller wrapping everything %>
+<%# Because here you already have it on line 8  %>
+<%# Because the values need to be in the same element %>
+<%# that's initializing the controller %>
 <div class="btn-centered">
   <%= link_to 'Nowhere',
     "#",
     class: "btn btn-secondary",
     data: {
       controller: 'alert',
-      alert_title_value: 'Are your sure?',
-      alert_html_value: 'warning',
-      alert_confirm_button_text_value: 'Congrats!',
+      alert_title_value: '🐝Congrats!!🎉',
+      alert_icon_value: 'info',
+      alert_html_value: 'You made it!!!',
+      alert_confirm_button_text_value: 'Lets goo',
       alert_show_cancel_button_value: true,
-      alert_cancel_button_text_value: 'Cancel',
+      alert_cancel_button_text_value: 'Bye',
       action: 'click->alert#initSweetalert',
       turbo: false
     }
