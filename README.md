@@ -1,1 +1,5 @@
-Rails app generated with [lewagon/rails-templates](https://github.com/lewagon/rails-templates), created by the [Le Wagon coding bootcamp](https://www.lewagon.com) team.
+🚀 Welcome to the Sweet Alert2 in Rails 7!
+
+🛠 Resources
+
+🚀 Getting Started
